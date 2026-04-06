@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --bg-color: #004643;
+  --bg-secondary: #003634;
+  --text-primary: #fafafa;
+  --text-secondary: #abd1c6;
+  --accent-cyan: #f9bc60;
+  --accent-purple: #e16162;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+  --glass-border-hover: rgba(255, 255, 255, 0.2);
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.light-theme {
+  --bg-color: #fafafa;
+  --bg-secondary: #f0f0f0;
+  --text-primary: #004643;
+  --text-secondary: #2b5c5a;
+  --glass-bg: rgba(0, 70, 67, 0.04);
+  --glass-border: rgba(0, 70, 67, 0.1);
+  --glass-bg-hover: rgba(0, 70, 67, 0.08);
+  --glass-border-hover: rgba(0, 70, 67, 0.2);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(0, 240, 255, 0.05) 0%, transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(138, 43, 226, 0.05) 0%, transparent 25%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Reusable Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+section {
+  padding: 100px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
 }
