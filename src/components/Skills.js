@@ -2,8 +2,8 @@ import React from 'react';
 import './Skills.css';
 
 const Skills = () => {
-  const technicalSkills = ['HTML/CSS','JavaScript', 'React', 'Python', 'Django'];
-  const tools = ['Git', 'Figma', 'Docker', 'AWS', 'MongoDB', 'PostgreSQL'];
+  const technicalSkills = ['HTML/CSS','Bootstrap','JavaScript', 'React', 'Python', 'Django'];
+  const tools = ['Git', 'MySQL'];
 
   return (
     <section id="skills" className="skills-section">

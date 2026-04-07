@@ -4,16 +4,30 @@ import './Education.css';
 const Education = () => {
   const educationList = [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Tech University",
-      year: "2020 - 2022",
-      description: "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors."
+      degree: "Master of Computer Science",
+      institution: "Bharathidasan University",
+      year: "2025 - 2027",
+      description: " currently pursuing.",
+      percentage:"81.5%"
     },
     {
-      degree: "Bachelor of Science in Information Technology",
-      institution: "State College",
-      year: "2016 - 2020",
-      description: "Focused on web development, databases, and network administration."
+      degree: "Bachelor of Computer Science",
+      institution: "AG Arts and Science College",
+      year: "2022- 2025",
+      description: "Focused on web development, databases, and network administration.",
+      percentage:"79.9%"
+    },
+    {
+      degree: "Higher Secondary",
+      institution: "Govt Model Higher Secondary School,thopputhurai",
+      year: "2020- 2022",
+      percentage:"58.7%"
+    },
+    {
+      degree:"High School",
+      institution:"Govt Model Higher Secondary School,thopputhurai",
+      year:"2019- 2020",
+      percentage:"76.6%"
     }
   ];
 
@@ -30,6 +44,7 @@ const Education = () => {
                 <h3 className="timeline-degree">{item.degree}</h3>
                 <h4 className="timeline-institution">{item.institution}</h4>
                 <p className="timeline-description">{item.description}</p>
+                <p className="timeline-percentage">{item.percentage}</p>
               </div>
             </div>
           ))}

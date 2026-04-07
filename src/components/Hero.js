@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container hero-container">
         <div className="hero-content animate-fade-in">
           <h2 className="greeting">Hello, I'm</h2>
-          <h1 className="name gradient-text">DHARUN R</h1>
+          <h1 className="name gradient-text">DHARUN .R</h1>
           <p className="subtitle">
             I build beautiful, responsive, and uniquely engaging web experiences that fuse design with robust engineering.
           </p>

@@ -31,20 +31,20 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <div className="contact-icon"><Mail size={20} /></div>
-                <span>hello@example.com</span>
+                <span>rdharunnn@gmail.com</span>
               </div>
               <div className="contact-item">
                 <div className="contact-icon"><Phone size={20} /></div>
-                <span>+1 (555) 123-4567</span>
+                <span>+91 7339043503</span>
               </div>
               <div className="contact-item">
                 <div className="contact-icon"><MapPin size={20} /></div>
-                <span>San Francisco, CA</span>
+                <span>Tiruppur, Tamil Nadu</span>
               </div>
             </div>
           </div>
           
-          <form className="contact-form" onSubmit={handleSubmit}>
+          {/* <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input 
@@ -84,13 +84,13 @@ const Contact = () => {
             <button type="submit" className="btn btn-primary submit-btn">
               Send Message <Send size={18} />
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
       
       <footer className="footer">
         <div className="container footer-content">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Dharun R. All rights reserved.</p>
         </div>
       </footer>
     </section>
