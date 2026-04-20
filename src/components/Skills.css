@@ -5,7 +5,7 @@
 
 .skills-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
   margin-top: 2rem;
 }
@@ -60,5 +60,18 @@
 @media (max-width: 768px) {
   .skills-category {
     padding: 1.5rem;
+  }
+  .skills-content {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-content {
+    grid-template-columns: 1fr;
+  }
+  .skill-tag {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 }

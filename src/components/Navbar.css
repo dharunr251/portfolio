@@ -9,7 +9,7 @@
 }
 
 .navbar.scrolled {
-  background: var(--glass-bg);
+  background: var(--bg-secondary);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--glass-border);
@@ -92,5 +92,12 @@
   }
   .nav-links.open {
     right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    width: 80%;
+    padding-left: 1.5rem;
   }
 }

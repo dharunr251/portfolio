@@ -100,3 +100,15 @@
     padding: 1.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .timeline-content {
+    padding: 1rem;
+  }
+  .timeline-degree {
+    font-size: 1.25rem;
+  }
+  .timeline-institution {
+    font-size: 1rem;
+  }
+}

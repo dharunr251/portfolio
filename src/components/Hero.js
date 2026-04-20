@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Download } from 'lucide-react';
 import './Hero.css';
-import profile from '../Pictures/portfolio1.jpg.jpeg';
+import profile from '../Pictures/dharun.jpg';
 
 const Hero = () => {
   return (

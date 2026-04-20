@@ -6,9 +6,7 @@ import './About.css';
 const About = () => {
   const skills = [
     { name: "Full Stack Development", icon: <Layout size={24} />, desc: "React, JavaScript, HTML/CSS, Python, Django, MySQL" },
-    // { name: "Backend Development", icon: <Code size={24} />, desc: "Python, Django, MySQL" },
-    // { name: "UI/UX Design", icon: <Monitor size={24} />, desc: "Figma, Adobe XD" },
-    // { name: "Architecture", icon: <Blocks size={24} />, desc: "Microservices, AWS" }
+
   ];
 
   return (

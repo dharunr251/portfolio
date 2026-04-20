@@ -229,3 +229,17 @@
   .blob-1 { width: 250px; height: 250px; }
   .blob-2 { width: 200px; height: 200px; }
 }
+
+@media (max-width: 480px) {
+  .unshape-image-container {
+    width: 200px;
+    height: 200px;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

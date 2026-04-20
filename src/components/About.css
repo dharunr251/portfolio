@@ -87,4 +87,10 @@
   .skills-grid {
     grid-template-columns: 1fr;
   }
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+  .skill-card {
+    padding: 1.5rem;
+  }
 }
